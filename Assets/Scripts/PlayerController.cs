@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
         originalScale = transform.localScale;
     }
 
-
     void FixedUpdate()
     {
         isGrounded = GroundCheck();
@@ -76,5 +75,16 @@ public class PlayerController : MonoBehaviour
     private bool GroundCheck()
     {
         return Physics2D.OverlapCircle(groundCheckPos.position, groundCheckRadius, whatIsGround);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Treasure"))
+        {
+            if (Input.GetAxis("Interact") > 0)
+            {
+                collision.gameObject.GetComponent<TreasureChestBehaviour>().Open();
+            }
+        }
     }
 }
