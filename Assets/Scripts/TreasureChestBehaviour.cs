@@ -21,12 +21,12 @@ public class TreasureChestBehaviour : MonoBehaviour
         if (isOpen)
         {
             spawnTimer += Time.fixedDeltaTime;
-            if (spawnTimer >= 0.2f)
+            if (spawnTimer >= 0.1f)
             {
                 spawnTimer = 0f;
                 GameObject newLoot = Instantiate(loot, transform);
-                newLoot.transform.position = newLoot.transform.position + new Vector3(0, 0, -1);
-                newLoot.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 800));
+                newLoot.transform.position = newLoot.transform.position + new Vector3(0, 0, -0.1f); // move them in front of the chest
+                newLoot.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 1000)); // set its initial velocity
             }
         }
     }
