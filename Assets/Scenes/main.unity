@@ -4256,7 +4256,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.25490198, g: 0.14117648, b: 0.07058824, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4661,7 +4661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef60588dcd4038e42b95299e17c3f506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
   jumpForce: 720
   groundCheckPos: {fileID: 1607756983}
   groundCheckRadius: 0.15
@@ -4780,7 +4780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22c08cca656008469297fbe51b3b7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1.5
   amplitude: 0.15
 --- !u!212 &1291755941
 SpriteRenderer:
